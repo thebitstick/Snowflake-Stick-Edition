@@ -1,14 +1,9 @@
 @-moz-document domain("tweetdeck.twitter.com") {
-@import url(https://fonts.googleapis.com/css?family=Raleway:200);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
 /* Snowflake Stick Edition for TweetDeck.
 The creators of the themes used are Diamant (@diamantlefou), Jorge (@thebitstick), Berter (@BerterTheBoss) and pixeldesu (@pixeldesu or http://pixelde.su/) and was recompiled in a more fitting theme by me, Scimitar (@AlmtyCwrd)
 */
-/*Gets rid of that weird moving thingy, really ugly*/
 
-.hearty .sprite
-{
-    background-image: none;
-}
 /* What */
 
 .facet-subtitle
@@ -29,25 +24,19 @@ The creators of the themes used are Diamant (@diamantlefou), Jorge (@thebitstick
 }
 /* Tweets */
 
-.stream-item
-{
-    box-shadow: 1px 1px 3px black;
-    margin: 2px;
-    margin-bottom: 6px;
-    border: none;
+.stream-item {
     color: #fff;
-    transition: background 0.1s ease-in;
 }
 
-.account-link:hover
-{
-    color: #fff;
+.fullname {
+    color: #d9d9d9;
 }
 
 .stream-item:hover
 {
     background-color: #202020;
 }
+
 /* Fix colors in Accounts */
 
 div.account-summary-text.nbfc.padding-tm.account-link
@@ -64,13 +53,13 @@ div.account-summary-text.nbfc.padding-tm.account-link
 body
 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .is-inverted-dark
 {
     font-family: "Raleway", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 /* Column-Update Sprite */
 
@@ -98,10 +87,6 @@ body
     display: none;
 }
 
-.tweet-dogear
-{
-    display: block;
-}
 /* Fixing RT blocks font color */
 
 .js-mdl-header, .mdl-header
@@ -692,7 +677,7 @@ select.js-mentioning
     font-weight: bold;
 }
 
-.btn-on-blue, .btn-positive, .btn-positive-alt, .btn-fav.s-favorited, .s-following .follow-btn, .attach-compose-buttons .tweet-button
+.btn-on-blue, .btn-positive, .btn-positive-alt, .s-following .follow-btn, .attach-compose-buttons .tweet-button
 {
     color: #fff;
     background-color: transparent;
@@ -985,10 +970,6 @@ input, textarea, select, .uneditable-input
     color: white
 }
 
-.sprite
-{
-    background-image: url('http://i.imgur.com/oTExYcd.png');
-}
 
 .lst-group .selected
 {
@@ -1072,6 +1053,7 @@ input, textarea, select, .uneditable-input
 .column-drag-handle
 {
     height: 15px;
+    opacity: 0;
 }
 
 .column-content
@@ -1204,35 +1186,7 @@ input, textarea, select, .uneditable-input
     display: inline-block;
     width: 94%;
 }
-/* ==OPTIONAL==
-Just add the slashes and asterisk at the two extremities of the code to deactivate and option */
-/* Display colored bar on the side instead of orange and green Fav/RT corners */
 
-.tweet-dogear
-{
-    display: block;
-    width: 0.1px;
-    height: 100%;
-    background-image: none;
-}
-
-.is-favorite .tweet-dogear
-{
-    border-right: 3px solid #BE1931;
-    box-shadow: 0px 0px 0px #BE1931;
-}
-
-.is-retweet.is-favorite .tweet-dogear
-{
-    border-right: 3px solid #ffffff;
-    box-shadow: 0px 0px 0px #ffffff;
-}
-
-.is-retweet .tweet-dogear
-{
-    border-right: 3px solid #71b332;
-    box-shadow: 0px 0px 0px #71b332;
-}
 /* Fixes to DM compose box */
 
 .rpl textarea
@@ -1360,11 +1314,6 @@ input, textarea, select
     border-color: transparent;
 }
 
-.txt-size-variable--12, .txt-small
-{
-    font-size: xx-small !important;
-}
-
 .pull-left.neg-margin-lm
 {
     margin-top: -30px;
@@ -1385,5 +1334,13 @@ input, textarea, select
 .icon.icon-xsmall.icon-dot.column-nav-updates
 {
     color: #fff;
+}
+
+.accs-header {
+    margin-left: -20px;
+}
+
+.sprite-drag {
+    display: none;
 }
 }
