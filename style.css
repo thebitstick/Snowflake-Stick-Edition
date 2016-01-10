@@ -1,35 +1,6 @@
 @-moz-document domain("tweetdeck.twitter.com") {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-/* Snowflake Stick Edition for TweetDeck.
-The creators of the themes used are Diamant (@diamantlefou), Jorge (@thebitstick), Berter (@BerterTheBoss) and pixeldesu (@pixeldesu or http://pixelde.su/) and was recompiled in a more fitting theme by me, Scimitar (@AlmtyCwrd)
-*/
 
-/* Tweets */
-
-.stream-item {
-    color: #fff;
-}
-
-.fullname {
-    color: #d9d9d9;
-}
-
-.stream-item:hover
-{
-    background-color: #202020;
-}
-
-/* Fix colors in Accounts */
-
-div.account-summary-text.nbfc.padding-tm.account-link
-{
-    color: #ccc;
-}
-
-.is-inverted-dark .accordion .is-active
-{
-    color: #ccc;
-}
 /* Applying font */
 
 body
@@ -193,17 +164,7 @@ body > div.js-modals-container > div > div > div > div > div > div.prf-actions >
     background-color: #1D1D1D;
     border-color: #1D1D1D;
 }
-/* Keyboard shortcut fix */
 
-.keyboard-shortcut-list-modal .mdl-content
-{
-    background-color: #1D1D1D;
-}
-
-#open-modal > div > div > div
-{
-    color: #aaa;
-}
 /* Profile tweaks */
 
 .prf-actions
@@ -270,21 +231,7 @@ body > div.js-modals-container > div > div > div > div > div > div.prf-actions >
 {
     color: #fff !important;
 }
-/* Selecting tweaks */
 
-::selection
-{
-    background-color: #fff;
-    color: #fff;
-}
-
-/* Selected tweet replybox color fix */
-
-.detail-view-inline-text
-{
-    background-color: #1D1D1D;
-    color: #ccc;
-}
 /* Profile tweets fix */
 
 .js-detail-content
@@ -408,17 +355,6 @@ body > div.js-modals-container > div > div > div > div > div > div.prf-actions >
 .scroll-conversation, .column-nav-item, .app-navigator, .app-title, .compose-reply-tweet, .compose-account, .facet-type.is-expanded, .column-options .button-tray, .compose .antiscroll-scrollbar, .account-row-separator-b:after
 {
     background-color: transparent;
-}
-
-.stream-item, .compose-header, .facet-type, .with-column-divider-bottom
-{
-    border-bottom: none;
-}
-
-.tweet-detail-wrapper
-{
-    background: transparent;
-    border-color: transparent;
 }
 
 .detail-view-inline
@@ -1048,7 +984,7 @@ input, textarea, select
 }
 
 .compose {
-  background-image: url('https://u.thebitstick.xyz/f/00EFE6.jpg')!important;
+  background-image: url('https://u.thebitstick.xyz/f/0E0847.png')!important;
   background-size: auto 100%;
   background-position: center bottom;
   box-shadow: inset -3px 0 75px 1px rgba(0,0,0,.7)!important;
@@ -1068,10 +1004,7 @@ input, textarea, select
     padding-left: 1px;
 }
 
-.js-column-content, .js-column-header, .js-column, .column-content, .is-narrow-columns .column {
-    width: 237px;
-    padding: 1px;
-    padding-right: 1px;
+.pull-left.neg-margin-lm {
+    margin-top: -1px;
 }
-
 }
