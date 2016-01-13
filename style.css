@@ -255,4 +255,9 @@ body > div.js-modals-container > div > div > div > div > div > div.prf-actions >
 {
     color: #55acee !important;
 }
+
+.txt-base-small
+{
+    background-color: transparent;
+}
 }
