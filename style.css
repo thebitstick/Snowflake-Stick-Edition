@@ -10,17 +10,6 @@ body
     font-family: "Open Sans", sans-serif;
 }
 
-.column-header,
-.column-header-temp
-{
-    background-color: #1D1D1D;
-}
-
-.app-header
-{
-    background-color: #1D1D1D;
-}
-
 a
 {
     color: #2daabd;
@@ -56,16 +45,6 @@ a
 .is-retweet.is-favorite .tweet-text .stream-item a
 {
     color: #fff;
-}
-
-.column-background-fill,
-.icon,
-.txt-base-small,
-.control-group,
-.padding-hl
-{
-    background: #1D1D1D;
-    color: #D1D1D1;
 }
 
 .compose
@@ -141,7 +120,15 @@ a
 
 .app-navigator,
 .sprite-logo-badge,
-.app-title
+.app-title,
+.app-header,
+.column-header,
+.column-header-temp,
+.column-background-fill,
+.icon,
+.txt-base-small,
+.control-group,
+.padding-hl
 {
     background-color: #1D1D1D;
 }
