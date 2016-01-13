@@ -1,5 +1,5 @@
-@-moz-document domain("tweetdeck.twitter.com") {
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@-moz-document url-prefix("https://tweetdeck.twitter.com/") {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 body
 {
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +8,17 @@ body
 .is-inverted-dark
 {
     font-family: "Open Sans", sans-serif;
+}
+
+.column-header,
+.column-header-temp
+{
+    background-color: #1D1D1D;
+}
+
+.app-header
+{
+    background-color: #1D1D1D;
 }
 
 a
@@ -45,6 +56,16 @@ a
 .is-retweet.is-favorite .tweet-text .stream-item a
 {
     color: #fff;
+}
+
+.column-background-fill,
+.icon,
+.txt-base-small,
+.control-group,
+.padding-hl
+{
+    background: #1D1D1D;
+    color: #D1D1D1;
 }
 
 .compose
@@ -120,15 +141,7 @@ a
 
 .app-navigator,
 .sprite-logo-badge,
-.app-title,
-.app-header,
-.column-header,
-.column-header-temp,
-.column-background-fill,
-.icon,
-.txt-base-small,
-.control-group,
-.padding-hl
+.app-title
 {
     background-color: #1D1D1D;
 }
