@@ -27,21 +27,6 @@ a
     transition: 1s;
 }
 
-.is-retweet .tweet-text a
-{
-    color: #71b332;
-}
-
-.is-favorite .tweet-text a
-{
-    color: #ED5A7F;
-}
-
-.is-retweet.is-favorite .tweet-text .stream-item a
-{
-    color: #fff;
-}
-
 .is-narrow-columns .app-columns
 {
     padding-top: 1px;
@@ -127,7 +112,7 @@ a
 
 .js-compose-text, .compose-text-container {
     font-size: 15px;
-    background: #1d1d1d;
+    background: #252525;
     color: #d1d1d1;
 }
 
@@ -148,14 +133,8 @@ a
     padding-bottom: 5px;
 }
 
-.app-title .sprite-logo-badge {
-    background-image: url(https://static1.1.sqspcdn.com/static/f/605335/25774736/1418666383553/Twitter3.png?token=QwA1oybHytJ7Lxtwtqlo80PnQWE%3D);
-    background-position: 0 0;
-    background-size: contain;
-}
-
 .app-header, .column-nav-item, .app-navigator {
-    background-color: #191919;
+    background-color: #212121;
 }
 
 .js-modal-panel, .mdl-header {
@@ -183,7 +162,7 @@ a
 /* Standard BG color */
 
 .app-columns-container, .js-column-content, .column-header, .js-tweet-detail, .js-tweet-replies, .js-detail-content, .scroll-conversation, .column-message, .column-content, .app-content {
-    background-color: #2a2a2a;
+    background-color: #212121;
 }
 
 /* Icons */
@@ -240,7 +219,7 @@ a
 }
 
 .js-show-drawer {
-    background-color: #2196F3 !important;
+    background-color: #212121 !important;
 }
 
 .js-show-drawer:hover {
@@ -274,17 +253,17 @@ a
 /* Actually, fuck the scrollbar. This was just made to look pretty anyways */
 
 .scroll-styled-v::-webkit-scrollbar {
-    width: 7px;
+    width: 6px;
 }
 
 /* Tweets */
 
 .stream-item {
     font-size: 14px;
-	background-color: #1e1e1e;
+	background-color: #323232;
     box-shadow: 1px 1px 2px #111;
-    margin: 3px;
-    margin-bottom: 6px;
+    margin: 5px;
+    margin-bottom: 3px;
     border: none;
     color: #fff;
     transition: background 0.1s ease-out;
@@ -312,7 +291,7 @@ a
 }
 
 .stream-item:hover {
-    background-color: #4a4a4a;
+    background-color: #424242;
 }
 
 /* Avatars */
@@ -368,18 +347,32 @@ a
 }
 
 .keyboard-shortcut-list-modal .mdl-content {
-    background-color: #171717;
+    background-color: #212121;
+    color: #a1a1a1;
 }
 #open-modal > div > div > div {
     color: #aaa;
 }
 
 .drawer-content {
-    background-color: #1d1d1d;
+    background-color: #212121;
 }
 
 .js-account-manager-container .drawer-header {
-    background: #1d1d1d;
+    background: #212121;
     color: #d1d1d1;
+}
+
+.js-popover-content .txt-base-small {
+    color: #212121;
+} 
+
+.keyboard-shortcut-list-modal .js-modal-panel, .keyboard-shortcut-list-modal .mdl-header {
+    background: #212121;
+    color: #a1a1a1;
+}
+
+.column-type-favorite .tweet-dogear {
+    display: none;
 }
 }
