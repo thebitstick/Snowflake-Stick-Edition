@@ -1,378 +1,254 @@
 @-moz-document url-prefix("https://tweetdeck.twitter.com/") {
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
-body
-{
-    font-family: 'Open Sans', sans-serif;
-}
+/*Setting Font*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400); body
+{ font-family: 'Open Sans', sans-serif; }
 
 .is-inverted-dark
-{
-    font-family: "Open Sans", sans-serif;
-}
+{ font-family: "Open Sans", sans-serif; }
+/*Start of giant mess*/
 
 a
-{
-    color: #2daabd;
-    text-decoration: none;
-}
+{ color: #2daabd; text-decoration: none; }
 
 .js-dismiss:hover + .s-profile .prf-card-inner
-{
-    opacity: 0!important;
-    color: rgba(0, 0, 0, 0)!important;
-}
+{ opacity: 0!important; color: rgba(0, 0, 0, 0)!important; }
 
 .prf-card-inner
-{
-    transition: 1s;
-}
+{ transition: 1s; }
 
 .is-narrow-columns .app-columns
-{
-    padding-top: 1px;
-    padding-left: 1px;
-}
+{ padding-top: 1px; padding-left: 1px; }
 
 .icon
-{
-    background-color: transparent;
-}
+{ background: transparent; }
 
 .is-narrow-columns .column
-{
-    width: 293px;
-    margin-right: 1px;
-}
+{ width: 293px; margin-right: 1px; }
 
 .app-columns
-{
-    padding: 1px 0 1px 1px;
-}
+{ padding: 1px 0 1px 1px; }
 
 .js-column
-{
-    margin: 0 1px 0 0;
-}
+{ margin: 0 1px 0 0; }
 
 .is-narrow-columns .column
-{
-    margin-right: 1px;
-}
+{ margin-right: 1px; }
 
 .tweet-avatar
-{
-    border-radius: 30%;
-}
+{ border-radius: 30%; }
 
 .js-column-header
-{
-    height: 30px;
-    line-height: 30px;
-}
+{ height: 30px; line-height: 30px; }
 
 .column-header
-{
-    height: 30px;
-    line-height: 30px;
-}
+{ height: 30px; line-height: 30px; }
 
 .js-tweet-results .column-header
-{
-    height: 50px;
-    line-height: 50px;
-}
+{ height: 50px; line-height: 50px; }
 
 .column-drag-handle
-{
-    height: 15px;
-}
+{ height: 15px; }
 
 .column-content
-{
-    top: 30px;
-}
+{ top: 30px; }
 
 .column-title-back .icon
-{
-    top: 50%;
-}
+{ top: 50%; }
 
 .txt-base-small
-{
-    background-color: transparent;
-}
+{ background: transparent; }
 
-.column-drag-handle, .column-number {
-    opacity: 0;
-}
+.column-drag-handle,
+.column-number
+{ opacity: 0; }
 
-.column-type-icon {
-    display: none;
-}
+.column-type-icon
+{ display: none; }
 
-.js-compose-text, .compose-text-container {
-    font-size: 15px;
-    background: #252525;
-    color: #d1d1d1;
-}
-
+.js-compose-text,
+.compose-text-container
+{ font-size: 15px; background: #252525; color: #d1d1d1; }
 /*QUD TIME*/
 /* App */
 
-.app-header {
-    box-shadow: 0px 0px 5px #111;
-}
+.app-header
+{ box-shadow: 0px 0px 5px #111; }
 
-.js-app-columns-container {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+.js-app-columns-container
+{ margin-left: 5px; margin-right: 5px; }
 
-.app-title {
-    background: none;
-    padding-bottom: 5px;
-}
+.app-title
+{ background: none; padding-bottom: 5px; }
 
-.app-header, .column-nav-item, .app-navigator {
-    background-color: #212121;
-}
-
-.js-modal-panel, .mdl-header {
-    color: #fff;
-}
-
+.app-header,
+.column-nav-item,
+.app-navigator
+{ background: #212121; }
 /* Columns */
-.column {
-    border: none;
-    margin-right: 5px;
-}
 
-.column-header {
-    border: none;
-}
+.column
+{ border: none; margin-right: 5px; }
 
-.column-header-temp .icon, .js-title {
-    color: #111;
-}
+.column-header
+{ border: none; }
 
-.column-message {
-    border: none;
-}
+.column-header-temp .icon,
+.js-title
+{ color: #111; }
 
+.column-message
+{ border: none; }
 /* Standard BG color */
 
-.app-columns-container, .js-column-content, .column-header, .js-tweet-detail, .js-tweet-replies, .js-detail-content, .scroll-conversation, .column-message, .column-content, .app-content {
-    background-color: #212121;
-}
-
+.app-columns-container,
+.js-column-content,
+.column-header,
+.js-tweet-detail,
+.js-tweet-replies,
+.js-detail-content,
+.scroll-conversation,
+.column-message,
+.column-content,
+.app-content
+{ background: #212121; }
 /* Icons */
 
-.icon {
-    color: #FFF;
-}
+.icon
+{ color: #FFF; }
 
-.icon-user-dd, .icon-play-video {
-    color: #555;
-}
-
-/* Buttons */
-
-.btn, .js-action-button {
-    box-shadow: 0.5px 0.5px 1.5px #111;
-    background-color: #2196F3;
-    color: #fff;
-    border: none;
-    transition: background 0.1s ease-out;
-}
-
-.btn:hover, .js-action-button:hover {
-    background-color: #64B5F6;
-}
-
-.btn-square {
-    background: none;
-    box-shadow: none;
-}
-
-.is-disabled {
-    background-color: #455A64 !important;
-    color: #90A4AE !important;
-}
-
-.btn-neutral, .box-neutral:hover {
-    background: none !important;
-    box-shadow: none !important;
-}
-
-.btn-back, .btn-back:hover {
-    color: #fff;
-}
-
-/* Compose */
-
-.compose {
-    background-color: #37474F;
-}
-
-.btn-compose, .js-hide-drawer {
-    background-color: #37474F !important;
-}
-
-.js-show-drawer {
-    background-color: #212121 !important;
-}
-
-.js-show-drawer:hover {
-    background-color: #64B5F6 !important;
-}
-
-.compose-text-container {
-    box-shadow: 1px 1px 3px #111;;
-}
-
-.bg-r-white {
-    background-color: #AAAAAA;
-}
-
-.js-quote-tweet-holder div .js-quoted-tweet-text {
-    color: #555;
-}
-
-.js-quote-tweet-holder div .username {
-    color: #333;
-}
-
-.js-quote-tweet-holder div .link-complex-target {
-    color: #111;
-}
-
-.js-header-action {
-    background: none !important;
-}
-
+.icon-user-dd,
+.icon-play-video
+{ color: #555; }
 /* Actually, fuck the scrollbar. This was just made to look pretty anyways */
 
-.scroll-styled-v::-webkit-scrollbar {
-    width: 6px;
-}
-
+.scroll-styled-v::-webkit-scrollbar
+{ width: 6px; }
 /* Tweets */
 
-.stream-item {
-    font-size: 14px;
-	background-color: #323232;
-    box-shadow: 1px 1px 2px #111;
-    margin: 5px;
-    margin-bottom: 3px;
-    border: none;
-    color: #fff;
-    transition: background 0.1s ease-out;
-}
+.stream-item
+{ font-size: 14px; background: #323232; box-shadow: 1px 1px 2px #111; margin: 5px; margin-bottom: 3px; border: none; color: #fff; transition: background 0.1s ease-out; }
 
-.link-complex, .url-ext {
-    color: #00BCD4;
-    transition: color 0.1s ease-out;
-}
+.link-complex,
+.url-ext
+{ color: #00BCD4; transition: color 0.1s ease-out; }
 
-.fullname {
-    color: #e2e2e2;
-}
+.fullname
+{ color: #e2e2e2; }
 
-.link-complex:hover, .url-ext:hover {
-    color: #4DD0E1;
-}
+.link-complex:hover,
+.url-ext:hover
+{ color: #4DD0E1; }
 
-.username {
-    color: #dadada;
-}
+.username
+{ color: #dadada; }
 
-.account-link:hover {
-    color: #fff;
-}
+.account-link:hover
+{ color: #fff; }
 
-.stream-item:hover {
-    background-color: #424242;
-}
-
+.stream-item:hover
+{ background: #383838; }
 /* Avatars */
 
-.avatar, .compose-account-img, .size48, .js-account-item, .tweet-avatar {
-    border-radius: 100px;
-    transition: transform 0.1s ease-out;
-    box-shadow: 2px 2px 2px #2a2a2a;
-}
+.avatar,
+.compose-account-img,
+.size48,
+.js-account-item,
+.tweet-avatar
+{ border-radius: 100px; transition: transform 0.1s ease-out; box-shadow: 2px 2px 2px #2a2a2a; }
 
-.avatar:hover, .compose-account-img:hover, .size48:hover, .js-account-item:hover {
-    transform: scale(1.1,1.1);
-}
+.avatar:hover,
+.compose-account-img:hover,
+.size48:hover,
+.js-account-item:hover
+{ transform: scale(1.1, 1.1); }
 
-.avatar:active, .compose-account-img:active, .size48:active, .js-account-item:active {
-    transform: scale(0.9,0.9);
-}
-  
-.s-profile, .prf {
-    border-radius: 0px;
-}
+.avatar:active,
+.compose-account-img:active,
+.size48:active,
+.js-account-item:active
+{ transform: scale(0.9, 0.9); }
 
+.s-profile,
+.prf
+{ border-radius: 0px; }
 /* Detail view */
 
-.detail-view-inline {
-    background-color: #222226;
-    border: none;
-}
+.detail-view-inline
+{ background: #222226; border: none; }
 
-.js-tweet-detail {
-    border: none;
-}
-
+.js-tweet-detail
+{ border: none; }
 /*WAIT*/
 
-.med-fullpanel
-{
-    background-color: rgba(0, 0, 0, .0);
-    border: none;
-    box-shadow: 0px 0px 0px 0px black;
-}
+.js-med-tweet
+{ background: rgba(0, 0, 0, .4); }
 
-.js-med-tweet {
-    background: rgba(0, 0, 0, .4);
-}
+.prf-img
+{ background: transparent; }
 
-.prf-img {
-    background: transparent;
-}
+.js-search-results-header .icon,
+.js-typeahead-recent-search-list .icon,
+.js-inreply .fullname
+{ color: black; }
 
-.js-search-results-header .icon, .js-typeahead-recent-search-list .icon, .accs-header, .js-inreply .fullname {
-    color: black;
-}
+.keyboard-shortcut-list-modal .mdl-content
+{ background: #212121; color: #a1a1a1; }
 
-.keyboard-shortcut-list-modal .mdl-content {
-    background-color: #212121;
-    color: #a1a1a1;
-}
-#open-modal > div > div > div {
-    color: #aaa;
-}
+#open-modal > div > div > div
+{ color: #aaa; }
 
-.drawer-content {
-    background-color: #212121;
-}
+.drawer-content
+{ background: #212121; }
 
-.js-account-manager-container .drawer-header {
-    background: #212121;
-    color: #d1d1d1;
-}
+.js-account-manager-container .drawer-header
+{ background: #212121; color: #d1d1d1; }
 
-.js-popover-content .txt-base-small {
-    color: #212121;
-} 
+.js-popover-content .txt-base-small
+{ color: #212121; }
 
-.keyboard-shortcut-list-modal .js-modal-panel, .keyboard-shortcut-list-modal .mdl-header {
-    background: #212121;
-    color: #a1a1a1;
-}
+.keyboard-shortcut-list-modal .js-modal-panel,
+.keyboard-shortcut-list-modal .mdl-header
+{ background: #212121; color: #d1d1d1; }
 
-.column-type-favorite .tweet-dogear {
-    display: none;
-}
+.column-type-favorite .tweet-dogear
+{ display: none; }
+
+.is-inverted-dark .account-link
+{ color: #FFF; }
+
+.js-item-launch .btn
+{ background: #212121; color: #d1d1d1; border: none; }
+
+.mdl-content,
+.mdl-inner
+{ background: #313131; border: none; }
+
+.mdl-header
+{ color: #d1d1d1; background: #313131; }
+
+.text-like-keyboard-key
+{ color: #000 }
+
+.sprite-drag
+{ opacity: 0; }
+
+.mdl-col-settings
+{ background: #313131; }
+
+.control-group
+{ color: #d1d1d1; }
+
+.settings-modal .js-modal-panel
+{ background: #313131; }
+
+.js-modal-panel
+{ background: transparent; box-shadow: none; }
+
+.cmp-replyto,
+.cmp-replyto .fullname
+{ color: #d1d1d1; background: #313131; border: none; }
+
+.js-inline-reply
+{ background: #252525; }
 }
